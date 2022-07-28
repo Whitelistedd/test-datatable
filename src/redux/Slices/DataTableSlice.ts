@@ -48,11 +48,11 @@ export const DataTableState = createSlice({
       if (state.Sort[en] === 'none') {
         state.Sort[en] = 'ASC';
         sorted.sort((a, b) => {
-          if (en !== 'id' && a[en] > b[en]) {
+          if (typeof a[en] !== 'number' && a[en] > b[en]) {
             return 1;
-          } else if (en !== 'id' && a[en] < b[en]) {
+          } else if (typeof a[en] !== 'number' && a[en] < b[en]) {
             return -1;
-          } else if (en === 'id' && a[en] < b[en]) {
+          } else if (typeof a[en] === 'number' && a[en] < b[en]) {
             console.log('1');
             return -1;
           } else {
@@ -63,11 +63,11 @@ export const DataTableState = createSlice({
       } else if (state.Sort[en] === 'ASC') {
         state.Sort[en] = 'DESC';
         sorted.sort((a, b) => {
-          if (en !== 'id' && a[en] > b[en]) {
+          if (typeof a[en] !== 'number' && a[en] > b[en]) {
             return -1;
-          } else if (en !== 'id' && a[en] < b[en]) {
+          } else if (typeof a[en] !== 'number' && a[en] < b[en]) {
             return 1;
-          } else if (en === 'id' && a[en] > b[en]) {
+          } else if (typeof a[en] === 'number' && a[en] > b[en]) {
             console.log('2');
             return -1;
           } else {

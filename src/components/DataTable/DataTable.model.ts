@@ -9,6 +9,7 @@ export type dataType = {
 
 export interface TableHeadProps {
   name: TableHeadData;
+  index: number;
   handleSort: (type: TableHeadData) => void;
 }
 

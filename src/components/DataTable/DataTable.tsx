@@ -20,6 +20,7 @@ export const DataTable: React.FC<DataTableProps> = ({ data }) => {
       <TableHead>
         {TableHeadData.map((tablehead, index) => (
           <TableHeadRow
+            index={index}
             handleSort={handleSort}
             key={`tablehead-number-${index}`}
             name={tablehead}

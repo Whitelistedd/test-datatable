@@ -23,7 +23,9 @@ const Body = styled.td`
   align-items: center;
 `;
 
-const Title = styled(Body)``;
+const Title = styled(Body)`
+  flex: 6.2;
+`;
 
 const Id = styled(Body)`
   flex: 1;

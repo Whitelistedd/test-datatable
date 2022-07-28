@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 
-import { SearchIcon } from '../../assets/icons/search';
+import { SearchIcon } from '@/assets/icons/SearchIcon';
 import { useAppDispatch, useAppSelector } from '../../redux/store/store';
 import { ChangeSearchTerm } from '../../redux/Slices/DataTableSlice';
 

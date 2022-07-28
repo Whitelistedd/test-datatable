@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import Roboto from './assets/fonts/Roboto-Medium.ttf';
+import Roboto from '/assets/fonts/Roboto-Medium.ttf';
 
 const GlobalStyle = createGlobalStyle`
 

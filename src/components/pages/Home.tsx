@@ -44,8 +44,8 @@ export const Home: React.FC = () => {
 };
 
 const Container = styled.div`
-  max-width: 1077px;
-  width: 90%;
+  max-width: 1110px;
+  width: 100%;
   height: 90%;
   display: flex;
   padding: 1em;
